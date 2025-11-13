@@ -89,4 +89,4 @@ class MyHomePage extends StatelessWidget {
 ## 🪪 Litsenziya
     Ushbu loyiha MIT License asosida tarqatiladi.
     Batafsil ma’lumot: 
-[LICENSE](https://github.com/MrErkinjon/my_nav_rail/blob/main/LICENSE)
+[LICENSE](https://github.com/MrErkinjon/my_nav_rail/blob/main/blob/main/LICENSE)
