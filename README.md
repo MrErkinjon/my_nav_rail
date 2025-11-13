@@ -25,8 +25,6 @@ Bir vidjet — uchta interfeys: mobil, planshet, kompyuter.
 - **Drawer sarlavhasi va pastki qismi** (header/footer)
 - **Qisqa (dense) va keng (extended) NavigationRail**
 - **100% test qamrovi**
-- **CI/CD (GitHub Actions)**
-- **To'liq hujjatlashtirilgan** (DartDoc)
 
 ---
 
