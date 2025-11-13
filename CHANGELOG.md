@@ -1,3 +1,5 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+- Dastlabki versiya (`Initial release`)
+- `MyNavRail` va `NavigationMyDestination` vidjetlari qo‘shildi
+- Responsive dizayn (mobil / planshet / kompyuter)
