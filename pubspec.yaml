@@ -1,7 +1,8 @@
 name: my_nav_rail
-description: "A new Flutter project."
+description: A Navigation Rail for Flutter
+maintainer: Erkinjon (@MrErkinjon)
 version: 0.0.1
-homepage:
+homepage: https://github.com/MrErkinjon/my_nav_rail
 
 environment:
   sdk: '>=3.0.0'

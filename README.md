@@ -1,15 +1,46 @@
+
+---
+
+## `README.md` ni loyihaga qo'shish (terminal)
+
+```bash
+cat > README.md << 'EOF'
 # my_nav_rail
 
-A new Flutter project.
+**Moslashuvchan. Aqlli. Material 3.**  
+Bir vidjet — uchta interfeys: mobil, planshet, kompyuter.
 
-## Getting Started
+[![pub.dev](https://img.shields.io/pub/v/my_nav_rail.svg?label=pub.dev&color=blue)](https://pub.dev/packages/my_nav_rail)
+[![GitHub](https://img.shields.io/github/stars/yourusername/my_nav_rail?style=social)](https://github.com/yourusername/my_nav_rail)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Interfeyslar
 
+| Mobil | Planshet | Kompyuter |
+|------|----------|-----------|
+| ![Mobil](screenshots/mobile.png) | ![Planshet](screenshots/tablet.png) | ![Komp](screenshots/desktop.png) |
+
+---
+
+## Xususiyatlar
+
+- **Bir marta yozing — hamma joyda ishlaydi** (`NavItem` bilan)
+- **Material 3** to'liq qo'llab-quvvatlanadi
+- **FAB** har bir platformada to'g'ri joylashadi
+- **Drawer sarlavhasi va pastki qismi** (header/footer)
+- **Qisqa (dense) va keng (extended) NavigationRail**
+- **100% test qamrovi**
+- **CI/CD (GitHub Actions)**
+- **To'liq hujjatlashtirilgan** (DartDoc)
+
+---
+
+## O'rnatish
+
+`pubspec.yaml` ga qo'shing:
+
+```yaml
+dependencies:
+  my_nav_rail: ^1.0.0
