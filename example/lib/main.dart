@@ -17,18 +17,35 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'MyNavRail Demo',
       theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.deepPurple),
-      home:MyNavRail(
+      home: MyNavRail(
         currentIndex: _index,
         onDestinationSelected: (i) => setState(() => _index = i),
         destinations: [
-          NavigationMyDestination(icon: const Icon(Icons.home_outlined), label: 'Home', selectedIcon: const Icon(Icons.home)),
-          NavigationMyDestination(icon: const Icon(Icons.search), label: 'Search'),
-          NavigationMyDestination(icon: const Icon(Icons.person_outline), label: 'Profile', selectedIcon: const Icon(Icons.person)),
+          NavigationMyDestination(
+            icon: const Icon(Icons.home_outlined),
+            label: 'Home',
+            selectedIcon: const Icon(Icons.home),
+          ),
+          NavigationMyDestination(
+            icon: const Icon(Icons.search),
+            label: 'Search',
+          ),
+          NavigationMyDestination(
+            icon: const Icon(Icons.person_outline),
+            label: 'Profile',
+            selectedIcon: const Icon(Icons.person),
+          ),
         ],
         body: [
-          const Center(child: Text('Home Page', style: TextStyle(fontSize: 32))),
-          const Center(child: Text('Search Page', style: TextStyle(fontSize: 32))),
-          const Center(child: Text('Profile Page', style: TextStyle(fontSize: 32))),
+          const Center(
+            child: Text('Home Page', style: TextStyle(fontSize: 32)),
+          ),
+          const Center(
+            child: Text('Search Page', style: TextStyle(fontSize: 32)),
+          ),
+          const Center(
+            child: Text('Profile Page', style: TextStyle(fontSize: 32)),
+          ),
         ][_index],
         title: const Text('MyNavRail'),
         floatingActionButton: FloatingActionButton(
@@ -38,7 +55,10 @@ class _MyAppState extends State<MyApp> {
         drawerHeader: (_) => const UserAccountsDrawerHeader(
           accountName: Text('John Doe'),
           accountEmail: Text('john@example.com'),
-          currentAccountPicture: CircleAvatar(backgroundColor: Colors.white, child: Text('J')),
+          currentAccountPicture: CircleAvatar(
+            backgroundColor: Colors.white,
+            child: Text('J'),
+          ),
         ),
         drawerFooter: (_) => const Padding(
           padding: EdgeInsets.all(16),

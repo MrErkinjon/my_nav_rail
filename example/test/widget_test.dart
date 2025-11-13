@@ -7,14 +7,25 @@ void main() {
   group('MyNavRail', () {
     testWidgets('renders mobile layout', (tester) async {
       await tester.pumpWidget(
-         MaterialApp(
+        MaterialApp(
           home: MyNavRail(
             currentIndex: 0,
-            onDestinationSelected:(index){},
+            onDestinationSelected: (index) {},
             destinations: const [
-              NavigationMyDestination(icon:  Icon(Icons.home_outlined), label: 'Home', selectedIcon:  Icon(Icons.home)),
-              NavigationMyDestination(icon:  Icon(Icons.search), label: 'Search'),
-              NavigationMyDestination(icon:  Icon(Icons.person_outline), label: 'Profile', selectedIcon:  Icon(Icons.person)),
+              NavigationMyDestination(
+                icon: Icon(Icons.home_outlined),
+                label: 'Home',
+                selectedIcon: Icon(Icons.home),
+              ),
+              NavigationMyDestination(
+                icon: Icon(Icons.search),
+                label: 'Search',
+              ),
+              NavigationMyDestination(
+                icon: Icon(Icons.person_outline),
+                label: 'Profile',
+                selectedIcon: Icon(Icons.person),
+              ),
             ],
             body: Text('Body'),
           ),
@@ -25,17 +36,28 @@ void main() {
 
     testWidgets('renders tablet layout', (tester) async {
       await tester.pumpWidget(
-         MaterialApp(
+        MaterialApp(
           home: SizedBox(
             width: 800,
             height: 600,
             child: MyNavRail(
               currentIndex: 0,
-              onDestinationSelected:(index){},
+              onDestinationSelected: (index) {},
               destinations: [
-                NavigationMyDestination(icon: const Icon(Icons.home_outlined), label: 'Home', selectedIcon: const Icon(Icons.home)),
-                NavigationMyDestination(icon: const Icon(Icons.search), label: 'Search'),
-                NavigationMyDestination(icon: const Icon(Icons.person_outline), label: 'Profile', selectedIcon: const Icon(Icons.person)),
+                NavigationMyDestination(
+                  icon: const Icon(Icons.home_outlined),
+                  label: 'Home',
+                  selectedIcon: const Icon(Icons.home),
+                ),
+                NavigationMyDestination(
+                  icon: const Icon(Icons.search),
+                  label: 'Search',
+                ),
+                NavigationMyDestination(
+                  icon: const Icon(Icons.person_outline),
+                  label: 'Profile',
+                  selectedIcon: const Icon(Icons.person),
+                ),
               ],
               body: Text('Body'),
             ),
@@ -47,17 +69,28 @@ void main() {
 
     testWidgets('renders desktop layout', (tester) async {
       await tester.pumpWidget(
-         MaterialApp(
+        MaterialApp(
           home: SizedBox(
             width: 1600,
             height: 900,
             child: MyNavRail(
               currentIndex: 0,
-              onDestinationSelected:(index){},
+              onDestinationSelected: (index) {},
               destinations: [
-                NavigationMyDestination(icon: const Icon(Icons.home_outlined), label: 'Home', selectedIcon: const Icon(Icons.home)),
-                NavigationMyDestination(icon: const Icon(Icons.search), label: 'Search'),
-                NavigationMyDestination(icon: const Icon(Icons.person_outline), label: 'Profile', selectedIcon: const Icon(Icons.person)),
+                NavigationMyDestination(
+                  icon: const Icon(Icons.home_outlined),
+                  label: 'Home',
+                  selectedIcon: const Icon(Icons.home),
+                ),
+                NavigationMyDestination(
+                  icon: const Icon(Icons.search),
+                  label: 'Search',
+                ),
+                NavigationMyDestination(
+                  icon: const Icon(Icons.person_outline),
+                  label: 'Profile',
+                  selectedIcon: const Icon(Icons.person),
+                ),
               ],
               body: Text('Body'),
             ),

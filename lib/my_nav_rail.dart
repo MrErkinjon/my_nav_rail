@@ -140,13 +140,13 @@ class MyNavRail extends StatelessWidget {
     this.useCompactRail = false,
     this.hideAppBar = false,
     this.elevation = true,
-  }) : assert(
-  destinations.length >= 2,
-  'At least 2 destinations are required',
-  ),
+  })  : assert(
+          destinations.length >= 2,
+          'At least 2 destinations are required',
+        ),
         assert(
-        currentIndex >= 0 && currentIndex < destinations.length,
-        'currentIndex must be within destinations range',
+          currentIndex >= 0 && currentIndex < destinations.length,
+          'currentIndex must be within destinations range',
         );
 
   @override
@@ -253,15 +253,14 @@ class NavigationMyDestination {
 
   /// Convert to Material 3 NavigationDestination
   BottomNavigationBarItem toMaterial3() => BottomNavigationBarItem(
-    icon: badge != null ? Badge(child: icon) : icon,
-    activeIcon: selectedIcon,
-    label: label,
-    tooltip: tooltip,
-  );
+        icon: badge != null ? Badge(child: icon) : icon,
+        activeIcon: selectedIcon,
+        label: label,
+        tooltip: tooltip,
+      );
 
   /// Convert to NavigationRailDestination
-  NavigationRailDestination toRailDestination() =>
-      NavigationRailDestination(
+  NavigationRailDestination toRailDestination() => NavigationRailDestination(
         icon: badge != null ? Badge(child: icon) : icon,
         selectedIcon: selectedIcon ?? icon,
         label: Text(label),
@@ -320,13 +319,13 @@ class _DesktopNavigationLayout extends StatelessWidget {
             width: drawerWidth,
             decoration: elevation
                 ? BoxDecoration(
-              border: Border(
-                right: BorderSide(
-                  color: theme.dividerColor,
-                  width: 1,
-                ),
-              ),
-            )
+                    border: Border(
+                      right: BorderSide(
+                        color: theme.dividerColor,
+                        width: 1,
+                      ),
+                    ),
+                  )
                 : null,
             child: _PersistentDrawerContent(
               destinations: destinations,
@@ -344,15 +343,15 @@ class _DesktopNavigationLayout extends StatelessWidget {
               appBar: hideAppBar
                   ? null
                   : AppBar(
-                title: title,
-                actions: actions,
-                automaticallyImplyLeading: false,
-                elevation: elevation ? null : 0,
-              ),
+                      title: title,
+                      actions: actions,
+                      automaticallyImplyLeading: false,
+                      elevation: elevation ? null : 0,
+                    ),
               body: body,
               floatingActionButton: floatingActionButton,
               floatingActionButtonLocation:
-              FloatingActionButtonLocation.endFloat,
+                  FloatingActionButtonLocation.endFloat,
             ),
           ),
         ],
@@ -406,15 +405,15 @@ class _TabletNavigationLayout extends StatelessWidget {
       appBar: hideAppBar
           ? null
           : AppBar(
-        title: title,
-        actions: actions,
-        elevation: elevation ? null : 0,
-      ),
+              title: title,
+              actions: actions,
+              elevation: elevation ? null : 0,
+            ),
       drawer: hasDrawerContent
           ? _ModalDrawerContent(
-        header: drawerHeader?.call(context),
-        footer: drawerFooter?.call(context),
-      )
+              header: drawerHeader?.call(context),
+              footer: drawerFooter?.call(context),
+            )
           : null,
       body: Row(
         children: [
@@ -485,15 +484,15 @@ class _MobileNavigationLayout extends StatelessWidget {
       appBar: hideAppBar
           ? null
           : AppBar(
-        title: title,
-        actions: actions,
-        elevation: elevation ? null : 0,
-      ),
+              title: title,
+              actions: actions,
+              elevation: elevation ? null : 0,
+            ),
       drawer: hasDrawerContent
           ? _ModalDrawerContent(
-        header: drawerHeader?.call(context),
-        footer: drawerFooter?.call(context),
-      )
+              header: drawerHeader?.call(context),
+              footer: drawerFooter?.call(context),
+            )
           : null,
       body: body,
       floatingActionButton: floatingActionButton,
