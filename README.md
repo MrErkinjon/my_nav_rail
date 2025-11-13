@@ -11,15 +11,15 @@ Bir vidjet — uchta interfeys: mobil, planshet, kompyuter.
 
 ## Interfeyslar
 
-| Mobil | Planshet | Kompyuter |
-|------|----------|-----------|
-| ![Mobil](screenshots/mobile.png) | ![Planshet](screenshots/tablet.png) | ![Komp](screenshots/desktop.png) |
+| Mobil                      | Planshet | Kompyuter |
+|----------------------------|----------|-----------|
+| ![Mobil](image/mobile.png) | ![Planshet](image/tablet.png) | ![Komp](image/desktop.png) |
 
 ---
 
 ## Xususiyatlar
 
-- **Bir marta yozing — hamma joyda ishlaydi** (`NavItem` bilan)
+- **Bir marta yozing — hamma joyda ishlaydi** (`NavigationMyDestination` bilan)
 - **Material 3** to'liq qo'llab-quvvatlanadi
 - **FAB** har bir platformada to'g'ri joylashadi
 - **Drawer sarlavhasi va pastki qismi** (header/footer)
