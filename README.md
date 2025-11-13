@@ -15,9 +15,9 @@ Minimal kod bilan **to‘liq responsiv navigatsiya tizimi** yarating.
 ---
 ## 🖼️ Interfeyslar
 
-|                                Mobil                                 |                                Planshet                                 |                                 Kompyuter                                 |
-|:--------------------------------------------------------------------:|:-----------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
-| ![Mobil](https://github.com/MrErkinjon/my_nav_rail/image/mobile.png) | ![Planshet](https://github.com/MrErkinjon/my_nav_rail/image/tablet.png) | ![Kompyuter](https://github.com/MrErkinjon/my_nav_rail/image/desktop.png) |
+|                                Mobil                                 |                                     Planshet                                      |                                 Kompyuter                                 |
+|:--------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
+| ![Mobil](https://github.com/MrErkinjon/my_nav_rail/blob/main/image/mobile.png) | ![Planshet](https://github.com/MrErkinjon/my_nav_rail/blob/main/image/tablet.png) | ![Kompyuter](https://github.com/MrErkinjon/my_nav_rail/blob/main/image/desktop.png) |
 
 
 ## 🚀 O‘rnatish
