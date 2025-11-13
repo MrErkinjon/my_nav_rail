@@ -1,10 +1,3 @@
-
----
-
-## `README.md` ni loyihaga qo'shish (terminal)
-
-```bash
-cat > README.md << 'EOF'
 # my_nav_rail
 
 **Moslashuvchan. Aqlli. Material 3.**  
