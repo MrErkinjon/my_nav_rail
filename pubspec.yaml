@@ -1,11 +1,13 @@
 name: my_nav_rail
-description: A Navigation Rail for Flutter
-maintainer: Erkinjon (@MrErkinjon)
+description: A responsive Flutter Navigation Rail scaffold that automatically adapts between bottom navigation, rail, and drawer layouts.
 version: 0.0.1
 homepage: https://github.com/MrErkinjon/my_nav_rail
+repository: https://github.com/MrErkinjon/my_nav_rail
+issue_tracker: https://github.com/MrErkinjon/my_nav_rail/issues
+topics: [navigation, rail, responsive, ui, flutter]
 
 environment:
-  sdk: '>=3.0.0'
+  sdk: '>=3.0.0 <4.0.0'
   flutter: '>=3.3.0'
 
 dependencies:
@@ -15,5 +17,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^4.0.0
 
 flutter:

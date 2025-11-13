@@ -1,37 +1,92 @@
-# my_nav_rail
+# 🧭 My Nav Rail
 
-**Moslashuvchan. Aqlli. Material 3.**  
-Bir vidjet — uchta interfeys: mobil, planshet, kompyuter.
-
-[![pub.dev](https://img.shields.io/pub/v/my_nav_rail.svg?label=pub.dev&color=blue)](https://pub.dev/packages/my_nav_rail)
-[![GitHub](https://img.shields.io/github/stars/yourusername/my_nav_rail?style=social)](https://github.com/yourusername/my_nav_rail)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+**My Nav Rail** — bu Flutter uchun **adaptiv Navigation Rail** vidjeti bo‘lib, u mobil, planshet va kompyuter ekranlariga moslashadi.  
+Minimal kod bilan **to‘liq responsiv navigatsiya tizimi** yarating.
 
 ---
 
-## Interfeyslar
+## ✨ Asosiy xususiyatlar
 
-| Mobil                      | Planshet | Kompyuter |
-|----------------------------|----------|-----------|
-| ![Mobil](image/mobile.png) | ![Planshet](image/tablet.png) | ![Komp](image/desktop.png) |
-
----
-
-## Xususiyatlar
-
-- **Bir marta yozing — hamma joyda ishlaydi** (`NavigationMyDestination` bilan)
-- **Material 3** to'liq qo'llab-quvvatlanadi
-- **FAB** har bir platformada to'g'ri joylashadi
-- **Drawer sarlavhasi va pastki qismi** (header/footer)
-- **Qisqa (dense) va keng (extended) NavigationRail**
-- **100% test qamrovi**
+- 📱 Mobil, 💻 Planshet va 🖥️ Kompyuter uchun adaptiv dizayn
+- 🎨 Material 3 dizayn tamoyillariga mos
+- ⚙️ To‘liq sozlanadigan (`customizable`) ranglar, ikonlar va animatsiyalar
+- 🔄 Oddiy API: `MyNavRail` va `MyNavDestination` bilan ishlash oson
 
 ---
+## 🖼️ Interfeyslar
 
-## O'rnatish
+|                                Mobil                                 |                                Planshet                                 |                                 Kompyuter                                 |
+|:--------------------------------------------------------------------:|:-----------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
+| ![Mobil](https://github.com/MrErkinjon/my_nav_rail/image/mobile.png) | ![Planshet](https://github.com/MrErkinjon/my_nav_rail/image/tablet.png) | ![Kompyuter](https://github.com/MrErkinjon/my_nav_rail/image/desktop.png) |
 
-`pubspec.yaml` ga qo'shing:
+
+## 🚀 O‘rnatish
+
+`pubspec.yaml` faylingizga quyidagini qo‘shing:
 
 ```yaml
 dependencies:
-  my_nav_rail: ^1.0.0
+  my_nav_rail: ^0.0.1
+  
+```
+
+## so‘ng terminalda bajaring:
+```
+flutter pub get
+```
+## 🧩 Foydalanish
+
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:my_nav_rail/my_nav_rail.dart';
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row(
+        children: [
+          MyNavRail(
+            selectedIndex: 0,
+            destinations: const [
+              MyNavDestination(icon: Icons.home, label: 'Bosh sahifa'),
+              MyNavDestination(icon: Icons.favorite, label: 'Sevimlilar'),
+              MyNavDestination(icon: Icons.settings, label: 'Sozlamalar'),
+            ],
+            onDestinationSelected: (index) {
+              debugPrint('Tanlangan: $index');
+            },
+          ),
+          const Expanded(
+            child: Center(
+              child: Text('Tanlangan sahifa kontenti'),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+```
+
+## ⚙️ Muhit talablari
+
+    Dart SDK: >=3.0.0
+    
+    Flutter SDK: >=3.3.0
+
+## 🧑‍💻 Muallif
+
+    👤 Erkinjon
+    📦 my_nav_rail paket muallifi
+    🔗 GitHub: @MrErkinjon
+
+## 🪪 Litsenziya
+    Ushbu loyiha MIT License asosida tarqatiladi.
+    Batafsil ma’lumot: 
+[LICENSE](https://github.com/MrErkinjon/my_nav_rail/blob/main/LICENSE)
